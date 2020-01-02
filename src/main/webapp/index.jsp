@@ -45,7 +45,7 @@
 </form>
 </center>
 <footer  ><h2><font style=color:red>Thank You</font> Please Visit Again ....</h2></footer>
-<h1 ><marquee><font style=color:red>{NTR}</font></marquee></h1>
+<h1 ><marquee><font style=color:red>{MUMBAI}</font></marquee></h1>
 
  </body>
 </html>
