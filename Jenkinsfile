@@ -17,13 +17,6 @@ pipeline{
 				steps{ input ('Do you want to proceed?')
 						echo 'this is deploy stage'
 					}
-			        }
-				
-			post {
-				success {
-					mail to: 'gsureshbabu4321@gmail.com', subject: 'job is success', body: 'this is test'
-						}
 				}
-			}
 	}
-
+}
