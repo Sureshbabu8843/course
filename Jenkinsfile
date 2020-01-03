@@ -17,6 +17,7 @@ pipeline{
 				steps{ input ('Do you want to proceed?')
 						echo 'this is deploy stage'
 					}
+			        }
 				
 			post {
 				success {
