@@ -2,13 +2,11 @@ pipeline{
 	agent any
 		stages {
 			stage('Preperation'){
-				steps{ sh 'docker pull ubuntu'
-				       sh 'docker pull nginx'
-				       sh 'docker pull tutum/hello-world'
+				steps{ sh 'docker pull centos'
 					}
 				}
 			stage('build'){
-				steps{ sh 'docker run -itd -p 82:80 --name testing_script tutum/hello-world'
+				steps{ sh 'docker run -itd -p 85:80 --name testing2_script centos'
 					}
 				}
 			stage('test'){
