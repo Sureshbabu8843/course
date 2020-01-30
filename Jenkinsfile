@@ -8,7 +8,7 @@ pipeline {
         post {
           success { 
               echo 'Now Archiving...'
-              archiveArtifacts artifacts: 'course.war'
+              archiveArtifacts artifacts: '**/target/*.war'
           }
         }
      }
@@ -17,7 +17,7 @@ pipeline {
       parallel{
         stage ('Deploy to Staging'){
           steps {
-                sh "cp course.war /usr/local/apache-tomcat8/webapps"
+                sh "**/target/*.war /usr/local/apache-tomcat8/webapps"
           }
         }
       }
